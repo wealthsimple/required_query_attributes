@@ -12,5 +12,5 @@ ActiveRecord::Schema.define do
 end
 
 class TestModel < ActiveRecord::Base
-  include RequiredQueryAttributes::Model
+  include RequiredQueryAttributes
 end

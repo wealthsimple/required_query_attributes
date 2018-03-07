@@ -1,11 +1,11 @@
 module RequiredQueryAttributes
+  def self.included(base)
+    base.send :extend, Model::ClassMethods
+  end
+
   # Extensions to `ActiveRecord::Base`.
   # We want to have the smallest possible footprint here.
   module Model
-    def self.included(base)
-      base.send :extend, ClassMethods
-    end
-
     module ClassMethods
       # Declare this in your model to enforce that the provided attribute
       # must be used in at least one condition on SELECT statements.
