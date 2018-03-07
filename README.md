@@ -1,0 +1,3 @@
+# RequiredQueryAttributes
+
+PLACEHOLDER
