@@ -10,8 +10,12 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Marco Costa']
   spec.email         = ['marco@marcotc.com']
 
-  spec.summary       = 'PLACEHOLDER'
-  spec.description   = 'PLACEHOLDER'
+  spec.summary       = 'Enforce presence of specific columns in ActiveRecord queries.'
+  spec.description   = <<~DESC
+    Enforces the presence of specific columns in SELECT queries. Useful when you have
+    performance restrictions when specific columns are not included in your WHERE clauses.
+    Indexed columns and partition keys are common examples of such columns.
+  DESC
   spec.homepage      = 'https://github.com/wealthsimple/required_query_attributes'
 
   spec.files = `git ls-files -z`.split("\x0").reject do |f|
