@@ -35,4 +35,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '0.49.1' # Temporarily necessary to avoid breaking ws-style
   spec.add_development_dependency 'ws-style'
+  spec.add_development_dependency 'sqlite3'
 end

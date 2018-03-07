@@ -2,6 +2,7 @@
 
 require 'bundler/setup'
 require 'required_query_attributes'
+require_relative 'database_helper'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
