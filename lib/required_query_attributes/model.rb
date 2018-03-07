@@ -1,8 +1,4 @@
 module RequiredQueryAttributes
-  def self.included(base)
-    base.send :extend, Model::ClassMethods
-  end
-
   # Extensions to `ActiveRecord::Base`.
   # We want to have the smallest possible footprint here.
   module Model
